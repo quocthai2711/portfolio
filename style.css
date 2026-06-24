@@ -477,6 +477,7 @@ section {
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
+    color: var(--accent-amber);
 }
 
 .section-title::after {
