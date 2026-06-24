@@ -523,16 +523,16 @@ section {
 }
 
 /* ==========================================================================
-   SKILLS SECTION
+   TOOLS SECTION
    ========================================================================== */
 
-.skills-grid {
+.tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
 }
 
-.skill-category {
+.tool-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     padding: 35px 30px;
@@ -540,34 +540,41 @@ section {
     transition: var(--transition-smooth);
 }
 
-.skill-category:hover {
+.tool-card:hover {
     border-color: var(--accent-amber);
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.skill-icon {
-    font-size: 1.8rem;
+.tool-icon {
+    font-size: 2.2rem;
     color: var(--accent-amber);
     margin-bottom: 20px;
 }
 
-.skill-category h3 {
+.tool-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
-.skill-list li {
+.tool-desc {
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 12px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.tool-features li {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
     position: relative;
     padding-left: 18px;
 }
 
-.skill-list li::before {
+.tool-features li::before {
     content: '→';
     position: absolute;
     left: 0;
