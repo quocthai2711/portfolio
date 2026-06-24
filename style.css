@@ -155,15 +155,34 @@ button, input, textarea {
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.3rem;
-    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo-accent {
-    color: var(--accent-amber);
-    font-family: var(--font-body);
+.logo-monogram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 2px solid var(--accent-amber);
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: italic;
+    border-radius: var(--radius-sm);
+    background: rgba(217, 119, 6, 0.03);
+    transition: var(--transition-smooth);
+}
+
+.logo:hover .logo-monogram {
+    border-color: var(--accent-gold);
+    border-radius: 50%;
+    color: var(--accent-gold);
+    background: rgba(217, 119, 6, 0.12);
+    box-shadow: 0 0 15px var(--accent-glow);
 }
 
 .nav-menu {
