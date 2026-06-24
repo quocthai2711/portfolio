@@ -188,6 +188,7 @@ button, input, textarea {
 .nav-menu {
     display: flex;
     gap: 32px;
+    margin-left: auto;
 }
 
 .nav-link {
