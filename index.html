@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lê Quốc Thái | Data Scientist Portfolio</title>
-    <meta name="description" content="Personal portfolio of Lê Quốc Thái, Data Scientist, showcasing technical tools and data science projects.">
+    <meta name="description" content="Personal portfolio of Lê Quốc Thái, Data Scientist, showcasing the ABC Challenge 2026 (HAR) project and technical tools.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +80,7 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>I am a Data Scientist studying and modeling since 2025. I focus on developing clean, efficient code and leveraging AI tools to accelerate machine learning solutions.</p>
-                        <p>I enjoy building end-to-end data pipelines, from preprocessing raw datasets to training and evaluating predictive models. My goal is to build robust, reproducible models that uncover valuable insights from complex data.</p>
+                        <p>I enjoy building end-to-end data pipelines, from preprocessing raw sensor datasets to training predictive models. My goal is to build intelligent solutions that find patterns in complex daily human activities (Human Activity Recognition).</p>
                     </div>
                     <div class="about-timeline">
                         <h3 class="timeline-title">My Journey</h3>
@@ -91,6 +91,13 @@
                                 <h4 class="timeline-role">Data Scientist Student</h4>
                                 <p class="timeline-company">Self-Directed & Academic Studies</p>
                                 <p class="timeline-desc">Acquiring advanced foundations in statistics, regression models, classification frameworks, and deep learning architectures.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2026</span>
+                                <h4 class="timeline-role">Project Developer</h4>
+                                <p class="timeline-company">abc challenge 2026</p>
+                                <p class="timeline-desc">Engineered models to categorize physical motions from smartphone sensor datasets (Human Activity Recognition).</p>
                             </div>
                         </div>
                     </div>
@@ -148,17 +155,26 @@
                 <h2 class="section-title">Featured Projects</h2>
                 
                 <!-- Projects Grid -->
-                <div class="projects-grid">
-                    <!-- Placeholder Project Card -->
-                    <article class="project-card" style="grid-column: 1 / -1; text-align: center; padding: 60px 30px;">
+                <div class="projects-grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 0 auto;">
+                    <!-- Project 1: abc challenge 2026 -->
+                    <article class="project-card" data-category="ml">
+                        <div class="project-header">
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
                         <div class="project-body">
-                            <div style="font-size: 2.8rem; color: var(--accent-amber); margin-bottom: 20px;">
-                                <i class="fa-solid fa-code-fork"></i>
+                            <h3 class="project-title">abc challenge 2026: Human Activity Recognition (HAR)</h3>
+                            <p class="project-description">Developed a classifier pipeline to recognize human activities (walking, sitting, running, etc.) using wearable tri-axial accelerometer and gyroscope datasets. Applied feature engineering and signal preprocessing to improve predictive accuracy.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>Pandas</span>
+                                <span>Sensor Data</span>
+                                <span>Signal Processing</span>
                             </div>
-                            <h3 class="project-title" style="margin-bottom: 15px;">Projects Compiling...</h3>
-                            <p class="project-description" style="max-width: 500px; margin: 0 auto; color: var(--text-secondary);">
-                                I am currently organizing and preparing my machine learning and data science repositories. They will be added here shortly.
-                            </p>
+                        </div>
+                        <div class="project-footer">
+                            <a href="#" class="project-link" aria-label="View source code on GitHub"><i class="fa-brands fa-github"></i> Source</a>
+                            <a href="#" class="project-link" aria-label="View live project demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
                         </div>
                     </article>
                 </div>
