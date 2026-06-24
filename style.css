@@ -256,12 +256,12 @@ button, input, textarea {
 }
 
 .btn-primary {
-    background-color: var(--accent-amber);
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
     color: var(--text-inverse);
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-gold);
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
     transform: translateY(-2px);
     box-shadow: 0 4px 20px var(--accent-glow);
 }
@@ -292,7 +292,49 @@ button, input, textarea {
     display: flex;
     align-items: center;
     padding-top: 100px;
-    background: radial-gradient(circle at 80% 20%, rgba(217, 119, 6, 0.04) 0%, transparent 50%);
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 80% 20%, rgba(217, 119, 6, 0.06) 0%, transparent 60%),
+                radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.04) 0%, transparent 50%);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(217, 119, 6, 0.12) 0%, rgba(245, 158, 11, 0.01) 70%, transparent 100%);
+    filter: blur(60px);
+    z-index: -1;
+    pointer-events: none;
+    animation: floatGlow 15s infinite ease-in-out alternate;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, rgba(217, 119, 6, 0.01) 70%, transparent 100%);
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
+    animation: floatGlow 20s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes floatGlow {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(50px, -30px) scale(1.1);
+    }
 }
 
 .hero-container {
@@ -326,8 +368,12 @@ button, input, textarea {
 
 .hero-title .highlight {
     font-style: italic;
-    color: var(--text-primary);
-    border-bottom: 2px solid var(--accent-amber);
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #ea580c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .hero-description {
@@ -438,9 +484,9 @@ section {
     position: absolute;
     bottom: -8px;
     left: 0;
-    width: 40px;
-    height: 1px;
-    background-color: var(--accent-amber);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent-amber), var(--accent-gold), transparent);
 }
 
 /* Scroll Reveal animation */
